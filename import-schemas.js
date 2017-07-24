@@ -36,7 +36,7 @@ module.exports = [
 		mongoCollection: 'furnitures',
 		fields: ['_id', 'price'],
 		query: [
-			{ '$match': {},
+			{ '$match': {} },
 			{ '$project': {'_id': 1, 'price': 1} },
 		],
 		toStrings: ['_id'],
